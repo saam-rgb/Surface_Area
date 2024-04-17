@@ -11,7 +11,7 @@
       rel="stylesheet" />
   </head>
   <body>
-    <section class="main container">
+    <section class="main container my-5">
       <div class="text-center my-5">
         <h2>3-D Shapes Calculator</h2>
         <p class="lead">TSA, CSA, Volume</p>
@@ -33,43 +33,51 @@
               Volume
             </button>
           </div>
-          <div id="solution"></div>
+          <div id="cubeSol"></div>
         </div>
         <div class="col-md-3">
-          <img src="./img/s1.png" alt="cube" class="img-fluid" />
+          <img src="./img/s2.png" alt="cube" class="img-fluid" />
 
           <div class="form">
-            <label for="side" class="form-label">Enter side :</label>
-            <input type="text" id="side" class="form-control" />
-            <button class="btn btn-secondary my-3" id="tsa" onclick="cubeTSA()">
+            <label for="baseRadius" class="form-label"
+              >Enter base radius :</label
+            >
+            <input type="text" id="baseRadius" class="form-control" />
+            <label for="coneHeight" class="form-label">Enter height :</label>
+            <input type="text" id="coneHeight" class="form-control" />
+            <button class="btn btn-secondary my-3" onclick="coneTSA()">
               TSA
             </button>
-            <button class="btn btn-secondary my-3 csa" onclick="cubeCSA()">
+            <button class="btn btn-secondary my-3 csa" onclick="coneCSA()">
               CSA
             </button>
-            <button class="btn btn-secondary my-3 csa" onclick="cubeVol()">
+            <button class="btn btn-secondary my-3 csa" onclick="coneVol()">
               Volume
             </button>
           </div>
-          <div id="solution"></div>
+          <div id="coneSol"></div>
         </div>
         <div class="col-md-3">
-          <img src="./img/s1.png" alt="cube" class="img-fluid" />
+          <img src="./img/s3.png" alt="cube" class="img-fluid" />
 
           <div class="form">
-            <label for="side" class="form-label">Enter side :</label>
-            <input type="text" id="side" class="form-control" />
-            <button class="btn btn-secondary my-3" id="tsa" onclick="cubeTSA()">
+            <label for="radius" class="form-label">Enter radius :</label>
+            <input type="text" id="radius" class="form-control" />
+            <label for="cylinderHeight" class="form-label"
+              >Enter height :</label
+            >
+            <input type="text" id="cylinderHeight" class="form-control" />
+            <button class="btn btn-secondary my-3" onclick="cylinderTSA()">
               TSA
             </button>
-            <button class="btn btn-secondary my-3 csa" onclick="cubeCSA()">
+            <button class="btn btn-secondary my-3 csa" onclick="cylinderCSA()">
               CSA
             </button>
-            <button class="btn btn-secondary my-3 csa" onclick="cubeVol()">
+            <button class="btn btn-secondary my-3 csa" onclick="cylinderVol()">
               Volume
             </button>
           </div>
-          <div id="solution"></div>
+          <div id="cylinderSol"></div>
         </div>
       </div>
     </section>
